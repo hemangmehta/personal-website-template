@@ -12,7 +12,7 @@ A minimalist personal website with blog and project showcase functionality. Buil
 ## Getting Started
 
 ### Prerequisites
-- Node.js (v14 or higher)
+- Node.js (v20 or higher)
 - npm (comes with Node.js)
 
 ### Installation
