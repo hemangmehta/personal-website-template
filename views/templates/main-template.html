@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{name}} - Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">{{name}}</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#posts">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="about" class="content-section">
+            <div class="container">
+                <div class="about-header">
+                    <h1>Hi, I'm {{name}}</h1>
+                    <p class="role">{{role}}</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-description">
+                        {{about}}
+                    </div>
+
+                    <div class="interests">
+                        <h3>Areas of Interest</h3>
+                        <ul class="interest-list">
+                            {{interests}}
+                        </ul>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="{{github}}" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="{{linkedin}}" target="_blank">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="mailto:{{email}}">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div id="projects" class="section-projects">
+                    <h2>Projects</h2>
+                    <ul class="list-items">
+                        {{projects}}
+                    </ul>
+                </div>
+                
+                <div id="posts" class="section-posts">
+                    <h2>Blog Posts</h2>
+                    <ul class="list-items">
+                        {{posts}}
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>{{copyright}}</p>
+        </div>
+    </footer>
+</body>
+</html> 
